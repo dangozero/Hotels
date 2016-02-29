@@ -112,7 +112,7 @@ namespace Hotels
 			int expires = Prefs.Current.GetValueOrDefault ("Hotel-Booking-Expires", 0);
 			if ( expires < time ) {
 				Prefs.Current.AddOrUpdateValue ("Hotel-Booking-Expires", time + 86400);
-				DatabaseHelper.Connection.InsertAsync (new Booking {
+				DatabaseHelper.ConnectionAsync.InsertAsync (new Booking {
 					HotelId = mHotelId,
 					Date = mCurrentDate,
 					Time = mCurrentTime
@@ -152,7 +152,7 @@ namespace Hotels
 			mBooking.Enabled = false;
 
 			var result = await DatabaseHelper
-				.Connection
+				.ConnectionAsync
 				.QueryAsync<Booking> ("SELECT * FROM Booking WHERE HotelId=? AND DATE(\"Date\")=?", mHotelId, mCurrentDate.ToString ("yyyy-MM-dd"));
 			mDisabled = new List<string> ();
 			foreach (Booking item in result) {

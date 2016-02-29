@@ -44,7 +44,7 @@ namespace Hotels
 			mPrice = view.FindViewById<TextView> (Resource.Id.hotelPrice);
 
 
-			DatabaseHelper.Connection.QueryAsync<Hotel>("SELECT * FROM Hotel ORDER BY Id DESC LIMIT 1").ContinueWith (t => {
+			DatabaseHelper.ConnectionAsync.QueryAsync<Hotel>("SELECT * FROM Hotel ORDER BY Id DESC LIMIT 1").ContinueWith (t => {
 				Hotel record = t.Result[0];
 
 				mTitle.Text = record.Title;

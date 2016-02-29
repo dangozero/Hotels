@@ -1,6 +1,25 @@
 ﻿<Properties StartupItem="Hotels.csproj" RefactoringSettings.EnableRefactorings="True">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.420334b25340b000" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Xamarin_Android_API_15" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MainActivity.cs">
+    <Files>
+      <File FileName="Fragments\AboutFragment.cs" Line="47" Column="34" />
+      <File FileName="MainActivity.cs" Line="54" Column="10" />
+      <File FileName="Helpers\DatabaseHelper.cs" Line="15" Column="28" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Hotels" expanded="True">
+            <Node name="Hotels" expanded="True">
+              <Node name="Fragments" expanded="True" />
+              <Node name="Helpers" expanded="True" />
+              <Node name="MainActivity.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

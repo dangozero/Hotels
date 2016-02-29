@@ -32,20 +32,19 @@ namespace Hotels
 		{
 			base.OnCreate (savedInstanceState);
 
-			Initialize (savedInstanceState);
+			Initialize ();
 
 			SetContentView (Resource.Layout.Main);
 		}
 
-		void Initialize(Bundle savedInstanceState)
+		void Initialize()
 		{
-			bool _initialized = Prefs.Current.GetValueOrDefault("Hotel-Demo-Intialized", false);
-			if (!_initialized) {
-				DatabaseHelper.Connection.CreateTableAsync<Hotel> ();
-				DatabaseHelper.Connection.CreateTableAsync<Booking> ();
+			DatabaseHelper.Connection.CreateTable<Hotel> ();
+			DatabaseHelper.Connection.CreateTable<Booking> ();
 
-
-				DatabaseHelper.Connection.InsertAsync (new Hotel {
+			int _count = DatabaseHelper.Connection.ExecuteScalar<int> ("select count(*) from Hotel");
+			if (_count == 0) {
+				DatabaseHelper.Connection.Insert (new Hotel {
 					Title = "Отель классный",
 					Announce = "Самый лучший отель",
 					Address = "г. Краснодар, ул. Красная",
@@ -58,14 +57,12 @@ namespace Hotels
 				Random r = new Random ();
 				for (int i = 0; i < 10; i++) {
 					DateTime randomDate = new DateTime (DateTime.Now.Year, DateTime.Now.Month, r.Next (1, 20));
-					DatabaseHelper.Connection.InsertAsync (new Booking {
+					DatabaseHelper.Connection.Insert (new Booking {
 						HotelId = 1,
 						Date = randomDate,
-						Time = mTimes[r.Next(0, mTimes.Count-1)]
+						Time = mTimes [r.Next (0, mTimes.Count - 1)]
 					});
 				}
-
-				Prefs.Current.AddOrUpdateValue ("Hotel-Demo-Intialized", true);
 			}
 		}
 	}
