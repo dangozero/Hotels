@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1">
+        <Button
+            android:text="W"
+            android:layout_width="44dp"
+            android:layout_height="55dp"
+            android:id="@+id/btnDaysOrMonth"
+            android:textSize="13dp"
+            android:background="#ffd5e2ed"
+            android:textColor="#32658e" />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/daysOfMonthList"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:drawSelectorOnTop="false" />
+    </LinearLayout>
+    <GridView
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/timesOfDayList"
+        android:paddingTop="16dp"
+        android:paddingRight="21dp"
+        android:paddingLeft="21dp"
+        android:horizontalSpacing="8dp"
+        android:verticalSpacing="8dp"
+        android:stretchMode="columnWidth"
+        android:columnWidth="111dp"
+        android:numColumns="3"
+        android:gravity="top"
+        android:background="#ffffffff" />
+    <RelativeLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:id="@+id/relativeLayout1"
+        android:background="#e7f2fe"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+        <Button
+            android:text="@string/btn_booking_title"
+            android:layout_width="274dp"
+            android:layout_height="48dp"
+            android:id="@+id/btnBooking"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/roundedbutton"
+            android:textSize="14dp" />
+    </RelativeLayout>
+</LinearLayout>
