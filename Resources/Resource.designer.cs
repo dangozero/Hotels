@@ -76,11 +76,14 @@ namespace Hotels
 		public partial class Array
 		{
 			
-			// aapt resource value: 0x7f0e0001
-			public const int dayNamesMin = 2131623937;
-			
 			// aapt resource value: 0x7f0e0000
-			public const int monthNamesShort = 2131623936;
+			public const int dayNamesMin = 2131623936;
+			
+			// aapt resource value: 0x7f0e0002
+			public const int monthNamesFull = 2131623938;
+			
+			// aapt resource value: 0x7f0e0001
+			public const int monthNamesShort = 2131623937;
 			
 			static Array()
 			{
@@ -1447,16 +1450,124 @@ namespace Hotels
 			public const int abc_textfield_search_material = 2130837572;
 			
 			// aapt resource value: 0x7f020045
-			public const int logo = 2130837573;
-			
-			// aapt resource value: 0x7f020048
-			public const int notification_template_icon_bg = 2130837576;
+			public const int about_selected = 2130837573;
 			
 			// aapt resource value: 0x7f020046
-			public const int RoundedButton = 2130837574;
+			public const int about_unselect = 2130837574;
 			
 			// aapt resource value: 0x7f020047
-			public const int RoundedFrame = 2130837575;
+			public const int AboutTab = 2130837575;
+			
+			// aapt resource value: 0x7f020048
+			public const int bg_day_item = 2130837576;
+			
+			// aapt resource value: 0x7f020049
+			public const int bg_day_item_default = 2130837577;
+			
+			// aapt resource value: 0x7f02004a
+			public const int bg_day_item_selected = 2130837578;
+			
+			// aapt resource value: 0x7f02004b
+			public const int bg_default = 2130837579;
+			
+			// aapt resource value: 0x7f02004c
+			public const int bg_selected = 2130837580;
+			
+			// aapt resource value: 0x7f02004d
+			public const int bg_time_default = 2130837581;
+			
+			// aapt resource value: 0x7f02004e
+			public const int bg_time_disabled = 2130837582;
+			
+			// aapt resource value: 0x7f02004f
+			public const int bg_time_item = 2130837583;
+			
+			// aapt resource value: 0x7f020050
+			public const int bg_time_selected = 2130837584;
+			
+			// aapt resource value: 0x7f020051
+			public const int booking_selected = 2130837585;
+			
+			// aapt resource value: 0x7f020052
+			public const int booking_unselect = 2130837586;
+			
+			// aapt resource value: 0x7f020053
+			public const int BookingTab = 2130837587;
+			
+			// aapt resource value: 0x7f020054
+			public const int btn_choose_bg = 2130837588;
+			
+			// aapt resource value: 0x7f020055
+			public const int btn_choose_default = 2130837589;
+			
+			// aapt resource value: 0x7f020056
+			public const int btn_choose_pressed = 2130837590;
+			
+			// aapt resource value: 0x7f020057
+			public const int btn_choose_textcolor = 2130837591;
+			
+			// aapt resource value: 0x7f020058
+			public const int btn_day_name = 2130837592;
+			
+			// aapt resource value: 0x7f020059
+			public const int btn_day_num = 2130837593;
+			
+			// aapt resource value: 0x7f02005a
+			public const int btn_rounded = 2130837594;
+			
+			// aapt resource value: 0x7f02005b
+			public const int btn_rounded_default = 2130837595;
+			
+			// aapt resource value: 0x7f02005c
+			public const int btn_rounded_disabled = 2130837596;
+			
+			// aapt resource value: 0x7f02005d
+			public const int btn_rounded_pressed = 2130837597;
+			
+			// aapt resource value: 0x7f02005e
+			public const int btn_rounded_textcolor = 2130837598;
+			
+			// aapt resource value: 0x7f02005f
+			public const int image_view_rounded = 2130837599;
+			
+			// aapt resource value: 0x7f020060
+			public const int map_selected = 2130837600;
+			
+			// aapt resource value: 0x7f020061
+			public const int map_unselect = 2130837601;
+			
+			// aapt resource value: 0x7f020062
+			public const int MapTab = 2130837602;
+			
+			// aapt resource value: 0x7f020063
+			public const int menu_selected = 2130837603;
+			
+			// aapt resource value: 0x7f020064
+			public const int menu_unselect = 2130837604;
+			
+			// aapt resource value: 0x7f020065
+			public const int MenuTab = 2130837605;
+			
+			// aapt resource value: 0x7f02006c
+			public const int notification_template_icon_bg = 2130837612;
+			
+			// aapt resource value: 0x7f020066
+			public const int review_selected = 2130837606;
+			
+			// aapt resource value: 0x7f020067
+			public const int review_unselect = 2130837607;
+			
+			// aapt resource value: 0x7f020068
+			public const int ReviewTab = 2130837608;
+			
+			// aapt resource value: 0x7f020069
+			public const int tab_bg = 2130837609;
+			
+			// aapt resource value: 0x7f02006a
+			public const int tab_label = 2130837610;
+			
+			// aapt resource value: 0x7f02006b
+			public const int time_item_textcolor = 2130837611;
 			
 			static Drawable()
 			{
@@ -1471,8 +1582,11 @@ namespace Hotels
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f070069
-			public const int action0 = 2131165289;
+			// aapt resource value: 0x7f07006c
+			public const int aboutTab = 2131165292;
+			
+			// aapt resource value: 0x7f070075
+			public const int action0 = 2131165301;
 			
 			// aapt resource value: 0x7f070042
 			public const int action_bar = 2131165250;
@@ -1498,8 +1612,8 @@ namespace Hotels
 			// aapt resource value: 0x7f070043
 			public const int action_context_bar = 2131165251;
 			
-			// aapt resource value: 0x7f07006d
-			public const int action_divider = 2131165293;
+			// aapt resource value: 0x7f070079
+			public const int action_divider = 2131165305;
 			
 			// aapt resource value: 0x7f070003
 			public const int action_menu_divider = 2131165187;
@@ -1528,23 +1642,26 @@ namespace Hotels
 			// aapt resource value: 0x7f070019
 			public const int beginning = 2131165209;
 			
-			// aapt resource value: 0x7f070062
-			public const int btnBooking = 2131165282;
+			// aapt resource value: 0x7f07006a
+			public const int bookingTab = 2131165290;
 			
-			// aapt resource value: 0x7f07005f
-			public const int btnDaysOrMonth = 2131165279;
+			// aapt resource value: 0x7f070062
+			public const int btnChoose = 2131165282;
+			
+			// aapt resource value: 0x7f070066
+			public const int btnSubmit = 2131165286;
 			
 			// aapt resource value: 0x7f07002c
 			public const int buttonPanel = 2131165228;
 			
-			// aapt resource value: 0x7f07006a
-			public const int cancel_action = 2131165290;
+			// aapt resource value: 0x7f070076
+			public const int cancel_action = 2131165302;
 			
 			// aapt resource value: 0x7f07003a
 			public const int checkbox = 2131165242;
 			
-			// aapt resource value: 0x7f070070
-			public const int chronometer = 2131165296;
+			// aapt resource value: 0x7f07007c
+			public const int chronometer = 2131165308;
 			
 			// aapt resource value: 0x7f07001d
 			public const int collapseActionView = 2131165213;
@@ -1558,14 +1675,14 @@ namespace Hotels
 			// aapt resource value: 0x7f070037
 			public const int customPanel = 2131165239;
 			
-			// aapt resource value: 0x7f070066
-			public const int dayName = 2131165286;
+			// aapt resource value: 0x7f070069
+			public const int dayName = 2131165289;
 			
-			// aapt resource value: 0x7f070065
-			public const int dayNum = 2131165285;
+			// aapt resource value: 0x7f070068
+			public const int dayNum = 2131165288;
 			
-			// aapt resource value: 0x7f070060
-			public const int daysOfMonthList = 2131165280;
+			// aapt resource value: 0x7f070063
+			public const int daysList = 2131165283;
 			
 			// aapt resource value: 0x7f070040
 			public const int decor_content_parent = 2131165248;
@@ -1582,8 +1699,8 @@ namespace Hotels
 			// aapt resource value: 0x7f07001a
 			public const int end = 2131165210;
 			
-			// aapt resource value: 0x7f070075
-			public const int end_padder = 2131165301;
+			// aapt resource value: 0x7f070081
+			public const int end_padder = 2131165313;
 			
 			// aapt resource value: 0x7f070026
 			public const int expand_activities_button = 2131165222;
@@ -1591,14 +1708,20 @@ namespace Hotels
 			// aapt resource value: 0x7f070039
 			public const int expanded_menu = 2131165241;
 			
-			// aapt resource value: 0x7f070067
-			public const int fragment1 = 2131165287;
+			// aapt resource value: 0x7f07006b
+			public const int fragment1 = 2131165291;
 			
-			// aapt resource value: 0x7f070068
-			public const int fragment2 = 2131165288;
+			// aapt resource value: 0x7f07006d
+			public const int fragment2 = 2131165293;
 			
-			// aapt resource value: 0x7f070063
-			public const int frameLayout1 = 2131165283;
+			// aapt resource value: 0x7f07006f
+			public const int fragment3 = 2131165295;
+			
+			// aapt resource value: 0x7f070071
+			public const int fragment4 = 2131165297;
+			
+			// aapt resource value: 0x7f070073
+			public const int fragment5 = 2131165299;
 			
 			// aapt resource value: 0x7f070005
 			public const int home = 2131165189;
@@ -1606,29 +1729,29 @@ namespace Hotels
 			// aapt resource value: 0x7f07000e
 			public const int homeAsUp = 2131165198;
 			
-			// aapt resource value: 0x7f070059
-			public const int hotelAddress = 2131165273;
-			
-			// aapt resource value: 0x7f070058
-			public const int hotelAnons = 2131165272;
-			
-			// aapt resource value: 0x7f070053
-			public const int hotelLogo = 2131165267;
+			// aapt resource value: 0x7f07005b
+			public const int hotelAddr = 2131165275;
 			
 			// aapt resource value: 0x7f07005a
-			public const int hotelPhone = 2131165274;
-			
-			// aapt resource value: 0x7f07005d
-			public const int hotelPrice = 2131165277;
-			
-			// aapt resource value: 0x7f070054
-			public const int hotelRating = 2131165268;
+			public const int hotelAnons = 2131165274;
 			
 			// aapt resource value: 0x7f070055
-			public const int hotelReview = 2131165269;
+			public const int hotelImage = 2131165269;
+			
+			// aapt resource value: 0x7f07005c
+			public const int hotelPhone = 2131165276;
+			
+			// aapt resource value: 0x7f07005f
+			public const int hotelPrice = 2131165279;
+			
+			// aapt resource value: 0x7f070056
+			public const int hotelRating = 2131165270;
 			
 			// aapt resource value: 0x7f070057
-			public const int hotelTitle = 2131165271;
+			public const int hotelReview = 2131165271;
+			
+			// aapt resource value: 0x7f070059
+			public const int hotelTitle = 2131165273;
 			
 			// aapt resource value: 0x7f07002a
 			public const int icon = 2131165226;
@@ -1639,29 +1762,35 @@ namespace Hotels
 			// aapt resource value: 0x7f070027
 			public const int image = 2131165223;
 			
-			// aapt resource value: 0x7f070074
-			public const int info = 2131165300;
+			// aapt resource value: 0x7f070051
+			public const int imageView1 = 2131165265;
+			
+			// aapt resource value: 0x7f070080
+			public const int info = 2131165312;
 			
 			// aapt resource value: 0x7f070000
 			public const int item_touch_helper_previous_elevation = 2131165184;
 			
-			// aapt resource value: 0x7f070064
-			public const int layoutBackground = 2131165284;
+			// aapt resource value: 0x7f070067
+			public const int layout = 2131165287;
 			
-			// aapt resource value: 0x7f070076
-			public const int layoutTime = 2131165302;
+			// aapt resource value: 0x7f070082
+			public const int layoutTime = 2131165314;
 			
-			// aapt resource value: 0x7f07006e
-			public const int line1 = 2131165294;
+			// aapt resource value: 0x7f07007a
+			public const int line1 = 2131165306;
 			
-			// aapt resource value: 0x7f070072
-			public const int line3 = 2131165298;
+			// aapt resource value: 0x7f07007e
+			public const int line3 = 2131165310;
 			
-			// aapt resource value: 0x7f070051
-			public const int linearLayout1 = 2131165265;
+			// aapt resource value: 0x7f070053
+			public const int linearLayout1 = 2131165267;
 			
-			// aapt resource value: 0x7f07005b
-			public const int linearLayout2 = 2131165275;
+			// aapt resource value: 0x7f07005d
+			public const int linearLayout2 = 2131165277;
+			
+			// aapt resource value: 0x7f070061
+			public const int linearLayout3 = 2131165281;
 			
 			// aapt resource value: 0x7f07000a
 			public const int listMode = 2131165194;
@@ -1669,11 +1798,20 @@ namespace Hotels
 			// aapt resource value: 0x7f070029
 			public const int list_item = 2131165225;
 			
-			// aapt resource value: 0x7f07006c
-			public const int media_actions = 2131165292;
+			// aapt resource value: 0x7f070070
+			public const int mapTab = 2131165296;
+			
+			// aapt resource value: 0x7f070078
+			public const int media_actions = 2131165304;
+			
+			// aapt resource value: 0x7f070072
+			public const int menuTab = 2131165298;
 			
 			// aapt resource value: 0x7f07001b
 			public const int middle = 2131165211;
+			
+			// aapt resource value: 0x7f070074
+			public const int monthsList = 2131165300;
 			
 			// aapt resource value: 0x7f070014
 			public const int multiply = 2131165204;
@@ -1690,6 +1828,12 @@ namespace Hotels
 			// aapt resource value: 0x7f07002e
 			public const int parentPanel = 2131165230;
 			
+			// aapt resource value: 0x7f07005e
+			public const int priceLabel = 2131165278;
+			
+			// aapt resource value: 0x7f070060
+			public const int priceRub = 2131165280;
+			
 			// aapt resource value: 0x7f070006
 			public const int progress_circular = 2131165190;
 			
@@ -1699,11 +1843,17 @@ namespace Hotels
 			// aapt resource value: 0x7f07003c
 			public const int radio = 2131165244;
 			
-			// aapt resource value: 0x7f070052
-			public const int relativeLayout1 = 2131165266;
+			// aapt resource value: 0x7f070054
+			public const int relativeLayout1 = 2131165268;
 			
-			// aapt resource value: 0x7f070056
-			public const int relativeLayout2 = 2131165270;
+			// aapt resource value: 0x7f070058
+			public const int relativeLayout2 = 2131165272;
+			
+			// aapt resource value: 0x7f070065
+			public const int relativeLayout3 = 2131165285;
+			
+			// aapt resource value: 0x7f07006e
+			public const int reviewTab = 2131165294;
 			
 			// aapt resource value: 0x7f070015
 			public const int screen = 2131165205;
@@ -1777,8 +1927,8 @@ namespace Hotels
 			// aapt resource value: 0x7f070018
 			public const int src_over = 2131165208;
 			
-			// aapt resource value: 0x7f07006b
-			public const int status_bar_latest_event_content = 2131165291;
+			// aapt resource value: 0x7f070077
+			public const int status_bar_latest_event_content = 2131165303;
 			
 			// aapt resource value: 0x7f07004d
 			public const int submit_area = 2131165261;
@@ -1786,29 +1936,26 @@ namespace Hotels
 			// aapt resource value: 0x7f07000c
 			public const int tabMode = 2131165196;
 			
-			// aapt resource value: 0x7f070073
-			public const int text = 2131165299;
+			// aapt resource value: 0x7f07007f
+			public const int text = 2131165311;
 			
-			// aapt resource value: 0x7f070071
-			public const int text2 = 2131165297;
+			// aapt resource value: 0x7f07007d
+			public const int text2 = 2131165309;
 			
 			// aapt resource value: 0x7f070035
 			public const int textSpacerNoButtons = 2131165237;
 			
-			// aapt resource value: 0x7f07005c
-			public const int textView6 = 2131165276;
+			// aapt resource value: 0x7f070052
+			public const int textView1 = 2131165266;
 			
-			// aapt resource value: 0x7f07005e
-			public const int textView7 = 2131165278;
+			// aapt resource value: 0x7f07007b
+			public const int time = 2131165307;
 			
-			// aapt resource value: 0x7f07006f
-			public const int time = 2131165295;
+			// aapt resource value: 0x7f070064
+			public const int timeList = 2131165284;
 			
-			// aapt resource value: 0x7f070077
-			public const int timeText = 2131165303;
-			
-			// aapt resource value: 0x7f070061
-			public const int timesOfDayList = 2131165281;
+			// aapt resource value: 0x7f070083
+			public const int timeTxt = 2131165315;
 			
 			// aapt resource value: 0x7f07002b
 			public const int title = 2131165227;
@@ -1948,55 +2095,73 @@ namespace Hotels
 			public const int abc_select_dialog_material = 2130968600;
 			
 			// aapt resource value: 0x7f040019
-			public const int AboutFragment = 2130968601;
+			public const int AboutTab = 2130968601;
 			
 			// aapt resource value: 0x7f04001a
-			public const int CalendarFragment = 2130968602;
+			public const int BookingFragment = 2130968602;
 			
 			// aapt resource value: 0x7f04001b
-			public const int CalendarItem = 2130968603;
+			public const int BookingTab = 2130968603;
 			
 			// aapt resource value: 0x7f04001c
-			public const int Main = 2130968604;
+			public const int DayItem = 2130968604;
 			
 			// aapt resource value: 0x7f04001d
-			public const int notification_media_action = 2130968605;
+			public const int Main = 2130968605;
 			
 			// aapt resource value: 0x7f04001e
-			public const int notification_media_cancel_action = 2130968606;
+			public const int MapTab = 2130968606;
 			
 			// aapt resource value: 0x7f04001f
-			public const int notification_template_big_media = 2130968607;
+			public const int MenuTab = 2130968607;
 			
 			// aapt resource value: 0x7f040020
-			public const int notification_template_big_media_narrow = 2130968608;
+			public const int MonthsFragment = 2130968608;
 			
 			// aapt resource value: 0x7f040021
-			public const int notification_template_lines = 2130968609;
+			public const int notification_media_action = 2130968609;
 			
 			// aapt resource value: 0x7f040022
-			public const int notification_template_media = 2130968610;
+			public const int notification_media_cancel_action = 2130968610;
 			
 			// aapt resource value: 0x7f040023
-			public const int notification_template_part_chronometer = 2130968611;
+			public const int notification_template_big_media = 2130968611;
 			
 			// aapt resource value: 0x7f040024
-			public const int notification_template_part_time = 2130968612;
+			public const int notification_template_big_media_narrow = 2130968612;
 			
 			// aapt resource value: 0x7f040025
-			public const int select_dialog_item_material = 2130968613;
+			public const int notification_template_lines = 2130968613;
 			
 			// aapt resource value: 0x7f040026
-			public const int select_dialog_multichoice_material = 2130968614;
+			public const int notification_template_media = 2130968614;
 			
 			// aapt resource value: 0x7f040027
-			public const int select_dialog_singlechoice_material = 2130968615;
+			public const int notification_template_part_chronometer = 2130968615;
 			
 			// aapt resource value: 0x7f040028
-			public const int support_simple_spinner_dropdown_item = 2130968616;
+			public const int notification_template_part_time = 2130968616;
 			
 			// aapt resource value: 0x7f040029
-			public const int TimeItem = 2130968617;
+			public const int PlaceHolderFragment = 2130968617;
+			
+			// aapt resource value: 0x7f04002a
+			public const int ReviewTab = 2130968618;
+			
+			// aapt resource value: 0x7f04002b
+			public const int select_dialog_item_material = 2130968619;
+			
+			// aapt resource value: 0x7f04002c
+			public const int select_dialog_multichoice_material = 2130968620;
+			
+			// aapt resource value: 0x7f04002d
+			public const int select_dialog_singlechoice_material = 2130968621;
+			
+			// aapt resource value: 0x7f04002e
+			public const int support_simple_spinner_dropdown_item = 2130968622;
+			
+			// aapt resource value: 0x7f04002f
+			public const int TimeItem = 2130968623;
 			
 			static Layout()
 			{
@@ -2028,7 +2193,7 @@ namespace Hotels
 		{
 			
 			// aapt resource value: 0x7f0d0000
-			public const int plural_review = 2131558400;
+			public const int review_plural = 2131558400;
 			
 			static Plurals()
 			{
@@ -2106,29 +2271,62 @@ namespace Hotels
 			// aapt resource value: 0x7f080012
 			public const int abc_toolbar_collapse_description = 2131230738;
 			
-			// aapt resource value: 0x7f080016
-			public const int app_name = 2131230742;
-			
-			// aapt resource value: 0x7f08001b
-			public const int booking_done = 2131230747;
-			
-			// aapt resource value: 0x7f08001c
-			public const int booking_once_per_day = 2131230748;
-			
-			// aapt resource value: 0x7f080017
-			public const int booking_title = 2131230743;
-			
-			// aapt resource value: 0x7f080018
-			public const int btn_booking_title = 2131230744;
+			// aapt resource value: 0x7f08001a
+			public const int about_addr_placeholder = 2131230746;
 			
 			// aapt resource value: 0x7f080019
-			public const int price_label = 2131230745;
+			public const int about_anons_placeholder = 2131230745;
 			
-			// aapt resource value: 0x7f08001a
-			public const int price_rub = 2131230746;
+			// aapt resource value: 0x7f08001b
+			public const int about_phone_placeholder = 2131230747;
+			
+			// aapt resource value: 0x7f08001c
+			public const int about_price_label = 2131230748;
+			
+			// aapt resource value: 0x7f08001d
+			public const int about_price_rub = 2131230749;
+			
+			// aapt resource value: 0x7f080017
+			public const int about_review_placeholder = 2131230743;
+			
+			// aapt resource value: 0x7f080016
+			public const int about_tab_label = 2131230742;
+			
+			// aapt resource value: 0x7f080018
+			public const int about_title_placeholder = 2131230744;
+			
+			// aapt resource value: 0x7f080023
+			public const int booking_btn_label = 2131230755;
+			
+			// aapt resource value: 0x7f080026
+			public const int booking_date_and_time = 2131230758;
+			
+			// aapt resource value: 0x7f080027
+			public const int booking_once_per_day = 2131230759;
+			
+			// aapt resource value: 0x7f080024
+			public const int booking_page_title = 2131230756;
+			
+			// aapt resource value: 0x7f08001e
+			public const int booking_tab_label = 2131230750;
+			
+			// aapt resource value: 0x7f080025
+			public const int empty_day_and_time = 2131230757;
+			
+			// aapt resource value: 0x7f08001f
+			public const int map_tab_label = 2131230751;
+			
+			// aapt resource value: 0x7f080020
+			public const int menu_tab_label = 2131230752;
+			
+			// aapt resource value: 0x7f080022
+			public const int review_tab_label = 2131230754;
 			
 			// aapt resource value: 0x7f080013
 			public const int status_bar_notification_info_overflow = 2131230739;
+			
+			// aapt resource value: 0x7f080021
+			public const int tab_placeholder = 2131230753;
 			
 			static String()
 			{
@@ -3063,6 +3261,42 @@ namespace Hotels
 			
 			// aapt resource value: 0x7f0a0132
 			public const int Widget_AppCompat_Toolbar_Button_Navigation = 2131362098;
+			
+			// aapt resource value: 0x7f0a0133
+			public const int about_fragment_container = 2131362099;
+			
+			// aapt resource value: 0x7f0a0136
+			public const int about_price_text = 2131362102;
+			
+			// aapt resource value: 0x7f0a0134
+			public const int about_review_text = 2131362100;
+			
+			// aapt resource value: 0x7f0a0137
+			public const int about_text = 2131362103;
+			
+			// aapt resource value: 0x7f0a0135
+			public const int about_title_text = 2131362101;
+			
+			// aapt resource value: 0x7f0a013b
+			public const int btn_choose_label = 2131362107;
+			
+			// aapt resource value: 0x7f0a013d
+			public const int btn_container = 2131362109;
+			
+			// aapt resource value: 0x7f0a013e
+			public const int btn_submit = 2131362110;
+			
+			// aapt resource value: 0x7f0a013a
+			public const int day_name_label = 2131362106;
+			
+			// aapt resource value: 0x7f0a0139
+			public const int day_number_label = 2131362105;
+			
+			// aapt resource value: 0x7f0a0138
+			public const int tab_label = 2131362104;
+			
+			// aapt resource value: 0x7f0a013c
+			public const int time_item_label = 2131362108;
 			
 			static Style()
 			{

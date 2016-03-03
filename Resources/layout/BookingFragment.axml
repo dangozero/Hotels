@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1"
+        style="@style/about_fragment_container">
+        <RelativeLayout
+            android:layout_width="123dp"
+            android:layout_height="match_parent"
+            android:id="@+id/relativeLayout1"
+            android:paddingTop="13dp"
+            android:paddingRight="13dp"
+            android:paddingBottom="18dp"
+            android:paddingLeft="24dp">
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/hotelImage"
+                android:background="@drawable/image_view_rounded" />
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hotelImage"
+                android:id="@+id/hotelRating"
+                android:numStars="5"
+                android:rating="2"
+                android:stepSize="1"
+                style="@android:style/Widget.DeviceDefault.RatingBar.Small"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true" />
+            <TextView
+                android:text="@string/about_review_placeholder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hotelRating"
+                android:id="@+id/hotelReview"
+                style="@style/about_review_text"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relativeLayout2"
+            android:paddingTop="13dp"
+            android:paddingRight="13dp"
+            android:paddingBottom="18dp">
+            <TextView
+                android:text="@string/about_title_placeholder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hotelTitle"
+                style="@style/about_title_text" />
+            <TextView
+                android:text="@string/about_anons_placeholder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hotelTitle"
+                android:id="@+id/hotelAnons"
+                style="@style/about_text"
+                android:layout_marginTop="4dp" />
+            <TextView
+                android:text="@string/about_addr_placeholder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hotelAnons"
+                android:id="@+id/hotelAddr"
+                android:layout_marginTop="4dp"
+                style="@style/about_text" />
+            <TextView
+                android:text="@string/about_phone_placeholder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hotelAddr"
+                android:id="@+id/hotelPhone"
+                android:layout_marginTop="4dp"
+                style="@style/about_text" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hotelPhone"
+                android:id="@+id/linearLayout2">
+                <TextView
+                    android:text="@string/about_price_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/priceLabel"
+                    style="@style/about_title_text"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="3dp" />
+                <TextView
+                    android:text="0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/hotelPrice"
+                    style="@style/about_price_text"
+                    android:layout_marginTop="4dp" />
+                <TextView
+                    android:text="@string/about_price_rub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/priceRub"
+                    style="@style/about_price_text"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="3dp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:id="@+id/linearLayout3"
+        style="@style/about_fragment_container">
+        <Button
+            android:text="Фев"
+            android:layout_width="42dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btnChoose"
+            android:background="@drawable/btn_choose_bg"
+            android:textColor="@drawable/btn_choose_textcolor"
+            style="@style/btn_choose_label" />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/daysList"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:id="@+id/timeList"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        style="@style/about_fragment_container"
+        android:paddingLeft="16dp" />
+    <RelativeLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout3"
+        style="@style/btn_container"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+        <Button
+            android:text="@string/booking_btn_label"
+            android:layout_width="242dp"
+            android:layout_height="46dp"
+            android:id="@+id/btnSubmit"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btn_rounded"
+            android:textColor="@drawable/btn_rounded_textcolor"
+            style="@style/btn_submit" />
+    </RelativeLayout>
+</LinearLayout>

@@ -4,23 +4,13 @@ using System.IO;
 
 namespace Hotels
 {
-	public static class DatabaseHelper
+	public class DatabaseHelper
 	{
-		static SQLiteAsyncConnection mConnectionAsync;
-		public static SQLiteAsyncConnection ConnectionAsync {
-			get {
-				if (mConnectionAsync == null) {
-					mConnectionAsync = new SQLiteAsyncConnection (Path.Combine (Environment.GetFolderPath (Environment.SpecialFolder.Personal), "hotels.db"));
-				}
-				return mConnectionAsync;
-			}
-		}
-
-		static SQLiteConnection mConnection;
-		public static SQLiteConnection Connection {
+		private static SQLiteAsyncConnection mConnection;
+		public static SQLiteAsyncConnection Connection {
 			get {
 				if (mConnection == null) {
-					mConnection = new SQLiteConnection (Path.Combine (Environment.GetFolderPath (Environment.SpecialFolder.Personal), "hotels.db"));
+					mConnection = new SQLiteAsyncConnection (Path.Combine (Environment.GetFolderPath (Environment.SpecialFolder.Personal), "hotels.db"));
 				}
 				return mConnection;
 			}

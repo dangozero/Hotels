@@ -16,7 +16,7 @@ namespace Hotels
 			set;
 		}
 
-		public string Announce {
+		public string Anons {
 			get;
 			set;
 		}

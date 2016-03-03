@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="78dp"
+    android:layout_height="62dp"
+    android:background="@drawable/tab_bg"
+    android:paddingTop="12dp">
+    <ImageView
+        android:layout_width="16dp"
+        android:layout_height="22dp"
+        android:id="@+id/imageView1"
+        android:background="@drawable/maptab"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:text="@string/map_tab_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView1"
+        android:id="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        style="@style/tab_label"
+        android:textColor="@drawable/tab_label" />
+</RelativeLayout>

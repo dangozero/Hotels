@@ -1,2 +1,0 @@
-# Hotels
-Demo android application

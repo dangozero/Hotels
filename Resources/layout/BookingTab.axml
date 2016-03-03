@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:layout_width="78dp"
+    android:layout_height="62dp"
+    android:id="@+id/relativeLayout1"
+    android:paddingTop="11dp"
+    android:background="@drawable/tab_bg">
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="24dp"
+        android:id="@+id/imageView1"
+        android:background="@drawable/bookingtab"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:text="@string/booking_tab_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView1"
+        android:id="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        style="@style/tab_label"
+        android:textColor="@drawable/tab_label" />
+</RelativeLayout>

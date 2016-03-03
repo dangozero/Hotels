@@ -1,24 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="25px"
+    android:minHeight="25px"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:id="@+id/frameLayout1">
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/layoutTime"
-        android:background="@drawable/roundedframe"
-        android:paddingTop="13dp"
-        android:paddingBottom="13dp">
-        <TextView
-            android:text="Small Text"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/timeText"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:textColor="#376891"
-            android:textSize="12dp" />
-    </RelativeLayout>
-</FrameLayout>
+    android:layout_height="wrap_content"
+    android:id="@+id/layoutTime"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:background="@drawable/bg_time_item">
+    <TextView
+        android:text="Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/timeTxt"
+        android:layout_centerInParent="true"
+        android:textColor="@drawable/time_item_textcolor"
+        style="@style/time_item_label" />
+</RelativeLayout>

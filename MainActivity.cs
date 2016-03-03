@@ -6,64 +6,97 @@ using System;
 
 namespace Hotels
 {
-	[Activity (Label = "@string/booking_title", MainLauncher = true, Icon = "@mipmap/icon")]
+	[Activity (Label = "Hotels", MainLauncher = true, Icon = "@mipmap/icon")]
 	public class MainActivity : Activity
 	{
-		private List<string> mTimes = new List<string>() {
-			"09:00", "09:20", "09:40",
-			"10:00", "10:20", "10:40", 
-			"11:00", "11:20", "11:40", 
-			"12:00", "12:20", "12:40", 
-			"13:00", "13:20", "13:40", 
-			"14:00", "14:20", "14:40", 
-			"15:00", "15:20", "15:40", 
-			"16:00", "16:20", "16:40", 
-			"17:00", "17:20", "17:40", 
-			"18:00", "18:20", "18:40", 
-			"19:00", "19:20", "19:40", 
-			"20:00", "20:20", "20:40", 
-			"21:00", "21:20", "21:40", 
-			"22:00", "22:20", "22:40", 
-			"23:00", "23:20", "23:40", 
-		};
-
-
+		private List<string> mTimes = new List<string> ();
 		protected override void OnCreate (Bundle savedInstanceState)
 		{
 			base.OnCreate (savedInstanceState);
 
-			Initialize ();
+			ActionBar.Title = GetString (Resource.String.booking_page_title);
 
+			InitialDemo ();
+
+			// Set our view from the "main" layout resource
 			SetContentView (Resource.Layout.Main);
+
+			TabHost tabs = FindViewById<TabHost>(Android.Resource.Id.TabHost);
+
+			tabs.Setup ();
+
+			var booking = tabs.NewTabSpec ("bookingTag");
+			booking.SetContent (Resource.Id.bookingTab);
+			booking.SetIndicator(LayoutInflater.Inflate(Resource.Layout.BookingTab, null));
+			tabs.AddTab (booking);
+
+			var about = tabs.NewTabSpec ("aboutTag");
+			about.SetContent (Resource.Id.aboutTab);
+			about.SetIndicator (LayoutInflater.Inflate (Resource.Layout.AboutTab, null));
+			tabs.AddTab (about);
+
+			var review = tabs.NewTabSpec ("reviewTag");
+			review.SetContent (Resource.Id.reviewTab);
+			review.SetIndicator (LayoutInflater.Inflate (Resource.Layout.ReviewTab, null));
+			tabs.AddTab (review);
+
+			var map = tabs.NewTabSpec ("mapTag");
+			map.SetContent (Resource.Id.mapTab);
+			map.SetIndicator (LayoutInflater.Inflate (Resource.Layout.MapTab, null));
+			tabs.AddTab (map);
+
+			var menu = tabs.NewTabSpec ("menuTag");
+			menu.SetContent (Resource.Id.menuTab);
+			menu.SetIndicator (LayoutInflater.Inflate (Resource.Layout.MenuTab, null));
+			tabs.AddTab (menu);
+
+
+			tabs.CurrentTab = 0;
 		}
 
-		void Initialize()
+		void InitialDemo()
 		{
-			DatabaseHelper.Connection.CreateTable<Hotel> ();
-			DatabaseHelper.Connection.CreateTable<Booking> ();
+			DatabaseHelper.Connection.CreateTableAsync<Hotel> ();
+			DatabaseHelper.Connection.CreateTableAsync<Booking> ();
 
-			int _count = DatabaseHelper.Connection.ExecuteScalar<int> ("select count(*) from Hotel");
-			if (_count == 0) {
-				DatabaseHelper.Connection.Insert (new Hotel {
-					Title = "Отель классный",
-					Announce = "Самый лучший отель",
-					Address = "г. Краснодар, ул. Красная",
-					Phone = "8 800 800 80 80",
-					Price = 5000,
-					Rating = 3,
-					Review = 12
-				});
-
-				Random r = new Random ();
-				for (int i = 0; i < 10; i++) {
-					DateTime randomDate = new DateTime (DateTime.Now.Year, DateTime.Now.Month, r.Next (1, 20));
-					DatabaseHelper.Connection.Insert (new Booking {
-						HotelId = 1,
-						Date = randomDate,
-						Time = mTimes [r.Next (0, mTimes.Count - 1)]
+			DatabaseHelper.Connection.ExecuteScalarAsync<int> ("SELECT COUNT(*) FROM Hotel").ContinueWith (te => {
+				if( te.Result == 0 ) {
+					DatabaseHelper.Connection.InsertAsync (new Hotel {
+						Title = "Отель классный",
+						Anons = "Самый лучший отель",
+						Address = "г. Краснодар, ул. Красная",
+						Phone = "8 800 800 80 80",
+						Price = 5000,
+						Rating = 3,
+						Review = 15,
 					});
 				}
-			}
+			}).Wait();
+
+			DatabaseHelper.Connection.ExecuteScalarAsync<int> ("SELECT COUNT(*) FROM Booking").ContinueWith (te => {
+				if( te.Result == 0 ) {
+					DateTime it_tim = new DateTime (1970, 1, 1, 9, 0, 0);
+					for (int i = 0; i < 45; i++) {
+						mTimes.Add (it_tim.ToString ("HH:mm"));
+						it_tim = it_tim.AddMinutes (20);
+					}
+
+					var random = new System.Random();
+					for(int month = 1; month < 10; month++) {
+
+						var schedules = random.Next(1, 10);
+						var days = random.Next(5, 20);
+						for(int k = 1; k < days; k++) {
+							for(int j = 0; j < schedules; j++) {
+								DatabaseHelper.Connection.InsertAsync(new Booking {
+									Date = new DateTime(DateTime.Now.Year, month, k).ToString("yyyy-MM-dd"),
+									Time = mTimes[random.Next(0, 44)]
+								});
+							}
+						}
+					}
+				}
+			}).Wait();
 		}
 	}
 }

@@ -1,18 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="25px"
+    android:minHeight="25px"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:minWidth="25px"
-    android:minHeight="25px">
-    <fragment
-        class="Hotels.AboutFragment"
+    android:id="@android:id/tabhost">
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/fragment1" />
-    <fragment
-        class="Hotels.CalendarFragment"
-        android:layout_width="match_parent"
-        android:layout_height="394dp"
-        android:id="@+id/fragment2" />
-</LinearLayout>
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_above="@android:id/tabs"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bookingTab"
+                android:minWidth="25px"
+                android:minHeight="25px">
+                <fragment
+                    class="Hotels.BookingFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fragment1" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/aboutTab">
+                <fragment
+                    class="Hotels.PlaceHolderFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fragment2" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/reviewTab">
+                <fragment
+                    class="Hotels.PlaceHolderFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fragment3" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/mapTab">
+                <fragment
+                    class="Hotels.PlaceHolderFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fragment4" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/menuTab">
+                <fragment
+                    class="Hotels.PlaceHolderFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fragment5" />
+            </LinearLayout>
+        </FrameLayout>
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</TabHost>

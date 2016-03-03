@@ -4,7 +4,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <ProjectGuid>{E1DF5D0E-3B27-4AEC-A202-E585C6D45DA4}</ProjectGuid>
+    <ProjectGuid>{A5D662EE-482C-4057-8CD9-C76DC4FD3ABC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>Hotels</RootNamespace>
     <AndroidApplication>True</AndroidApplication>
@@ -27,7 +27,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
-    <AndroidLinkMode>Full</AndroidLinkMode>
+    <AndroidLinkMode>None</AndroidLinkMode>
     <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -60,13 +60,14 @@
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Fragments\AboutFragment.cs" />
-    <Compile Include="Fragments\CalendarFragment.cs" />
+    <Compile Include="BookingFragment.cs" />
+    <Compile Include="PlaceHolderFragment.cs" />
     <Compile Include="Helpers\DatabaseHelper.cs" />
-    <Compile Include="Models\Hotel.cs" />
     <Compile Include="Helpers\Prefs.cs" />
-    <Compile Include="Models\Booking.cs" />
-    <Compile Include="Helpers\DateTimeExtension.cs" />
+    <Compile Include="MonthsFragment.cs" />
+    <Compile Include="Models\Hotel.cs" />
+    <Compile Include="Booking.cs" />
+    <Compile Include="DateTimeExtension.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -82,14 +83,56 @@
     <AndroidResource Include="Resources\mipmap-xhdpi\Icon.png" />
     <AndroidResource Include="Resources\mipmap-xxhdpi\Icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\Icon.png" />
-    <AndroidResource Include="Resources\layout\AboutFragment.axml" />
-    <AndroidResource Include="Resources\drawable\logo.png" />
-    <AndroidResource Include="Resources\layout\CalendarFragment.axml" />
-    <AndroidResource Include="Resources\layout\CalendarItem.axml" />
+    <AndroidResource Include="Resources\drawable\about_selected.png" />
+    <AndroidResource Include="Resources\drawable\about_unselect.png" />
+    <AndroidResource Include="Resources\drawable\booking_selected.png" />
+    <AndroidResource Include="Resources\drawable\booking_unselect.png" />
+    <AndroidResource Include="Resources\drawable\map_selected.png" />
+    <AndroidResource Include="Resources\drawable\map_unselect.png" />
+    <AndroidResource Include="Resources\drawable\menu_selected.png" />
+    <AndroidResource Include="Resources\drawable\menu_unselect.png" />
+    <AndroidResource Include="Resources\drawable\review_selected.png" />
+    <AndroidResource Include="Resources\drawable\review_unselect.png" />
     <AndroidResource Include="Resources\values\Style.xml" />
+    <AndroidResource Include="Resources\layout\BookingFragment.axml" />
+    <AndroidResource Include="Resources\drawable\BookingTab.xml" />
+    <AndroidResource Include="Resources\drawable\AboutTab.xml" />
+    <AndroidResource Include="Resources\drawable\ReviewTab.xml" />
+    <AndroidResource Include="Resources\drawable\MapTab.xml" />
+    <AndroidResource Include="Resources\drawable\MenuTab.xml" />
+    <AndroidResource Include="Resources\layout\AboutTab.axml" />
+    <AndroidResource Include="Resources\layout\ReviewTab.axml" />
+    <AndroidResource Include="Resources\layout\MapTab.axml" />
+    <AndroidResource Include="Resources\layout\MenuTab.axml" />
+    <AndroidResource Include="Resources\layout\PlaceHolderFragment.axml" />
+    <AndroidResource Include="Resources\layout\BookingTab.axml" />
+    <AndroidResource Include="Resources\layout\DayItem.axml" />
+    <AndroidResource Include="Resources\layout\MonthsFragment.axml" />
     <AndroidResource Include="Resources\layout\TimeItem.axml" />
-    <AndroidResource Include="Resources\drawable\RoundedButton.xml" />
-    <AndroidResource Include="Resources\drawable\RoundedFrame.xml" />
+    <AndroidResource Include="Resources\drawable\bg_time_default.xml" />
+    <AndroidResource Include="Resources\drawable\bg_default.xml" />
+    <AndroidResource Include="Resources\drawable\bg_selected.xml" />
+    <AndroidResource Include="Resources\drawable\bg_time_selected.xml" />
+    <AndroidResource Include="Resources\drawable\bg_day_item.xml" />
+    <AndroidResource Include="Resources\drawable\btn_choose_default.xml" />
+    <AndroidResource Include="Resources\drawable\btn_choose_pressed.xml" />
+    <AndroidResource Include="Resources\drawable\btn_choose_bg.xml" />
+    <AndroidResource Include="Resources\drawable\bg_time_item.xml" />
+    <AndroidResource Include="Resources\drawable\btn_choose_textcolor.xml" />
+    <AndroidResource Include="Resources\drawable\time_item_textcolor.xml" />
+    <AndroidResource Include="Resources\drawable\btn_day_name.xml" />
+    <AndroidResource Include="Resources\drawable\btn_day_num.xml" />
+    <AndroidResource Include="Resources\drawable\btn_rounded.xml" />
+    <AndroidResource Include="Resources\drawable\btn_rounded_default.xml" />
+    <AndroidResource Include="Resources\drawable\btn_rounded_disabled.xml" />
+    <AndroidResource Include="Resources\drawable\btn_rounded_pressed.xml" />
+    <AndroidResource Include="Resources\drawable\bg_day_item_default.xml" />
+    <AndroidResource Include="Resources\drawable\bg_day_item_selected.xml" />
+    <AndroidResource Include="Resources\drawable\image_view_rounded.xml" />
+    <AndroidResource Include="Resources\drawable\tab_bg.xml" />
+    <AndroidResource Include="Resources\drawable\tab_label.xml" />
+    <AndroidResource Include="Resources\drawable\btn_rounded_textcolor.xml" />
+    <AndroidResource Include="Resources\drawable\bg_time_disabled.xml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />

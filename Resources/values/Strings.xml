@@ -1,43 +1,68 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
+
 <resources>
-	<string name="app_name">Hotels</string>
-	<string name="booking_title">Бронирование номера</string>
-	<string name="btn_booking_title">ЗАБРОНИРОВАТЬ НОМЕР</string>
-	<string name="price_label">Стоимость от:</string>
-	<string name="price_rub">руб.</string>
-	<string name="booking_done">Вы забронировали номер на {0} в {1}.</string>
-	<string name="booking_once_per_day">Забронировать можно только раз в сутки!</string>
-	<plurals name="plural_review">
-        <item quantity="zero">%d отзывов</item>
-        <item quantity="one">%d отзыв</item>
-        <item quantity="two">%d отзыва</item>
-        <item quantity="few">%d отзыва</item>
-        <item quantity="many">%d отзывов</item>
-        <item quantity="other">%d отзывов</item>
-    </plurals>
+	<string name="about_tab_label">Об отеле</string>
+	<string name="about_review_placeholder">0 отзывов</string>
+	<string name="about_title_placeholder">Название отеля</string>
+	<string name="about_anons_placeholder">Анонс отеля</string>
+	<string name="about_addr_placeholder">Адрес отеля</string>
+	<string name="about_phone_placeholder">Телефон отеля</string>
+	<string name="about_price_label">Стоимость от:</string>
+	<string name="about_price_rub">руб.</string>
+	<string name="booking_tab_label">Бронь</string>
+	<string name="map_tab_label">На карте</string>
+	<string name="menu_tab_label">Меню</string>
+	<string name="tab_placeholder">Заглушка для страницы</string>
+	<string name="review_tab_label">Отзывы</string>
+	<string name="booking_btn_label">ЗАБРОНИРОВАТЬ НОМЕР</string>
+	<string name="booking_page_title">Бронирование номера</string>
+	<string name="empty_day_and_time">Не выбрана дата или время</string>
+	<string name="booking_date_and_time">Вы забронировали номер на {0} в {1}.</string>
+	<string name="booking_once_per_day">Забронировать можно только раз в сутки.</string>
+	<plurals name="review_plural">
+		<item quantity="zero">%d отзывов</item>
+		<item quantity="one">%d отзыв</item>
+		<item quantity="two">%d отзыва</item>
+		<item quantity="few">%d отзыва</item>
+		<item quantity="many">%d отзывов</item>
+		<item quantity="other">%d отзывов</item>
+	</plurals>
 
-    <string-array name="monthNamesShort">
-    	 <item>Янв</item>
-    	 <item>Фев</item>
-    	 <item>Мар</item>
-    	 <item>Апр</item>
-    	 <item>Май</item>
-    	 <item>Июн</item>
-    	 <item>Июл</item>
-    	 <item>Авг</item>
-    	 <item>Сен</item>
-    	 <item>Окт</item>
-    	 <item>Ноя</item>
-    	 <item>Дек</item>
-    </string-array>
+	<string-array name="dayNamesMin">
+		<item>Вс</item>
+		<item>Пн</item>
+		<item>Вт</item>
+		<item>Ср</item>
+		<item>Чт</item>
+		<item>Пт</item>
+		<item>Сб</item>
+	</string-array>
 
-    <string-array name="dayNamesMin">
-    	 <item>Вс</item>
-    	 <item>Пн</item>
-    	 <item>Вт</item>
-    	 <item>Ср</item>
-    	 <item>Чт</item>
-    	 <item>Пт</item>
-    	 <item>Сб</item>
-    </string-array>
+	<string-array name="monthNamesShort">
+		<item>Янв</item>
+		<item>Фев</item>
+		<item>Мар</item>
+		<item>Апр</item>
+		<item>Май</item>
+		<item>Июн</item>
+		<item>Июл</item>
+		<item>Сен</item>
+		<item>Окт</item>
+		<item>Ноя</item>
+		<item>Дек</item>
+	</string-array>
+
+	<string-array name="monthNamesFull">
+		<item>Январь</item>
+		<item>Феварль</item>
+		<item>Март</item>
+		<item>Апрель</item>
+		<item>Май</item>
+		<item>Июнь</item>
+		<item>Июль</item>
+		<item>Сентябрь</item>
+		<item>Октябрь</item>
+		<item>Ноябрь</item>
+		<item>Декабрь</item>
+	</string-array>
 </resources>
